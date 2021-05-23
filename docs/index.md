@@ -12,7 +12,7 @@ end)
 ```
 
 Server:
-```perl
+```lua
 QBCore = nil
 TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 ```
