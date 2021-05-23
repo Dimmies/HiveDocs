@@ -1,0 +1,57 @@
+site_name: Hive Documentations
+
+theme: material
+
+pages:
+  - Home: index.md
+
+  - Client Functions:
+    - PlayerData: clFunctions/PlayerData.md
+    - SpawnVehicle: clFunctions/SpawnVehicle.md
+    - DeleteVehicle: clFunctions/DeleteVehicle.md
+    - Notify: clFunctions/Notify.md
+    - TriggerCallback: clFunctions/TriggerCallback.md
+    - EnumerateEntities: clFunctions/EnumerateEntities.md
+    - GetVehicles: clFunctions/GetVehicles.md
+    - GetPeds: clFunctions/GetPeds.md
+    - GetPlayers: clFunctions/GetPlayers.md
+    - GetClosestVehicle: clFunctions/GetClosestVehicle.md
+    - GetClosestPed: clFunctions/GetClosestPed.md
+    - GetClosestPlayer: clFunctions/GetClosestPlayer.md
+    - GetPlayersFromCoords: clFunctions/GetPlayersFromCoords.md
+    - HasItem: clFunctions/HasItem.md
+    - Progressbar: clFunctions/Progressbar.md
+    - GetVehicleProperties: clFunctions/GetVehicleProperties.md
+    - SetVehicleProperties: clFunctions/SetVehicleProperties.md
+
+  - Client Events:
+    - OnPlayerLoaded: clEvents/OnPlayerLoaded.md
+    - DeleteVehicle: clEvents/DeleteVehicle.md
+    - Revive: clEvents/Revive.md
+    - TeleportToCoords: clEvents/TeleportToCoords.md
+    - TeleportToPlayer: clEvents/TeleportToPlayer.md
+
+  - Server Functions:
+    - PlayerData: svFunctions/PlayerData.md
+    - GetIdentifier: svFunctions/GetIdentifier.md
+    - GetSource: svFunctions/GetSource.md
+    - GetPlayerByCitizenId: svFunctions/GetPlayerByCitizenId.md
+    - GetPlayerByPhone: svFunctions/GetPlayerByPhone.md
+    - GetPlayers: svFunctions/GetPlayers.md
+    - CreateCallback: svFunctions/CreateCallback.md
+    - TriggerCallback: svFunctions/TriggerCallback.md
+    - CreateUseableItem: svFunctions/CreateUseableItem.md
+    - CanUseItem: svFunctions/CanUseItem.md
+    - UseItem: svFunctions/UseItem.md
+    - Kick: svFunctions/Kick.md
+    - IsWhitelisted: svFunctions/IsWhitelisted.md
+    - AddPermission: svFunctions/AddPermission.md
+    - RemovePermission: svFunctions/RemovePermission.md
+    - HasPermission: svFunctions/HasPermission.md
+    - GetPermission: svFunctions/GetPermission.md
+    - IsOptin: svFunctions/IsOptin.md
+    - ToggleOptin: svFunctions/ToggleOptin.md
+    - IsPlayerBanned: svFunctions/IsPlayerBanned.md
+
+  - Server Events:
+    - OnPlayerLoaded: svEvents/OnPlayerLoaded.md
