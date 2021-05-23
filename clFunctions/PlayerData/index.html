@@ -832,7 +832,7 @@
                 
                   <h1>PlayerData</h1>
                 
-                <pre><code class="language-lua">QBCore.Functions.GetPlayerData()
+                <pre><code class="language-lua">local Player = QBCore.Functions.GetPlayerData()
 </code></pre>
 <p>Loads the players Data</p>
 <p>Player Data consists of:</p>
@@ -845,44 +845,44 @@
 </thead>
 <tbody>
 <tr>
-<td>PlayerData.money</td>
+<td>Player.PlayerData.money</td>
 <td>Returns a table of the players money (cash, bank &amp; crypto)</td>
 </tr>
 <tr>
-<td>PlayerData.job</td>
+<td>Player.PlayerData.job</td>
 <td>Returns a table of the player job (name, label, payment, onduty)</td>
 </tr>
 <tr>
-<td>PlayerData.position</td>
+<td>Player.PlayerData.position</td>
 <td>Returns the players saved position</td>
 </tr>
 <tr>
-<td>PlayerData.metadata</td>
+<td>Player.PlayerData.metadata</td>
 <td>Returns a table of the players Metadata (hunger, thirst, licenses, commandbindings, fingerprint etc.)</td>
 </tr>
 <tr>
-<td>PlayerData.charinfo</td>
+<td>Player.PlayerData.charinfo</td>
 <td>Returns a table of the player Character Data (cid, nationality, First &amp; Last name, Phone#, DOB, AccountID &amp; Gender)</td>
 </tr>
 <tr>
-<td>PlayerData.citizenid</td>
+<td>Player.PlayerData.citizenid</td>
 <td>Returns the characters Citizen ID</td>
 </tr>
 <tr>
-<td>PlayerData.steam</td>
+<td>Player.PlayerData.steam</td>
 <td>Returns the players Steam ID</td>
 </tr>
 <tr>
-<td>PlayerData.license</td>
+<td>Player.PlayerData.license</td>
 <td>Returns the players R* License</td>
 </tr>
 <tr>
-<td>PlayerData.name</td>
+<td>Player.PlayerData.name</td>
 <td>Returns the players name (This just calls GetPlayerName())</td>
 </tr>
 <tr>
-<td>PlayerData.cid</td>
-<td>Returns the players CID (Should use PlayerData.citizenid as this is always 1)</td>
+<td>Player.PlayerData.cid</td>
+<td>Returns the players CID (Should use Player.PlayerData.citizenid as this is always 1)</td>
 </tr>
 </tbody>
 </table>
@@ -896,59 +896,59 @@
 </thead>
 <tbody>
 <tr>
-<td>PlayerData.Functions.SetJob(job)</td>
+<td>Player.Functions.SetJob(job)</td>
 <td>Sets the players job</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.SetJobDuty(onDuty)</td>
+<td>Player.Functions.SetJobDuty(onDuty)</td>
 <td>Sets the player to being on/off duty</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.AddJobReputation(amount)</td>
+<td>Player.Functions.AddJobReputation(amount)</td>
 <td>Adds players job reputation</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.SetMetaData(meta, val)</td>
+<td>Player.Functions.SetMetaData(meta, val)</td>
 <td>Sets specified metadata to the given value</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.AddMoney(moneytype, amount, reason)</td>
+<td>Player.Functions.AddMoney(moneytype, amount, reason)</td>
 <td>Adds money to the player</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.RemoveMoney(moneytype, amount, reason)</td>
+<td>Player.Functions.RemoveMoney(moneytype, amount, reason)</td>
 <td>Removes money from the player</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.SetMoney(moneytype, amount, reason)</td>
+<td>Player.Functions.SetMoney(moneytype, amount, reason)</td>
 <td>Sets players money</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.AddItem(item, amount, slot, info)</td>
+<td>Player.Functions.AddItem(item, amount, slot, info)</td>
 <td>Adds Item to players inventory [slot and info are optional]</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.RemoveItem(item, amount, slot)</td>
+<td>Player.Functions.RemoveItem(item, amount, slot)</td>
 <td>Removes Item from players inventory [slot is optional]</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.SetInventory(items)</td>
+<td>Player.Functions.SetInventory(items)</td>
 <td>Sets the inventory of a player</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.ClearInventory()</td>
+<td>Player.Functions.ClearInventory()</td>
 <td>Clears the inventory of a player</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.GetItemByName(item)</td>
+<td>Player.Functions.GetItemByName(item)</td>
 <td>Gets the given items data</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.GetItemBySlot(slot)</td>
+<td>Player.Functions.GetItemBySlot(slot)</td>
 <td>Gets the item from the given slot</td>
 </tr>
 <tr>
-<td>PlayerData.Functions.Save()</td>
+<td>Player.Functions.Save()</td>
 <td>Saves the players data</td>
 </tr>
 </tbody>
