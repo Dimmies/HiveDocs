@@ -1,7 +1,7 @@
 # Player Data
 
 ```lua
-TriggerEvent("QBCore:Command:TeleportToPlayer", othersource)
+TriggerEvent("HVCore:Command:TeleportToPlayer", othersource)
 ```
 
 | Argument | Description | Required |

@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.IsWhitelisted(source,)
+HVCore.Functions.IsWhitelisted(source,)
 ```
 
 | Argument | Description | Required |

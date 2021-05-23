@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.CreateUseableItem(item, cb)
+HVCore.Functions.CreateUseableItem(item, cb)
 ```
 
 | Argument | Description | Required |

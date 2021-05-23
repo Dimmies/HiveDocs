@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetClosestPed(coords, ignoreList)
+HVCore.Functions.GetClosestPed(coords, ignoreList)
 ```
 
 

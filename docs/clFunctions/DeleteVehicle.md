@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.DeleteVehicle(vehicle)
+HVCore.Functions.DeleteVehicle(vehicle)
 ```
 
 

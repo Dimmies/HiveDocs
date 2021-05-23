@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.SpawnVehicle(model, cb, coords, isnetworked)
+HVCore.Functions.SpawnVehicle(model, cb, coords, isnetworked)
 ```
 
 

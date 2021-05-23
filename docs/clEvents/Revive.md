@@ -1,7 +1,7 @@
 # Player Data
 
 ```lua
-TriggerEvent("QBCore:Command:Revive")
+TriggerEvent("HVCore:Command:Revive")
 ```
 
 Revives the player

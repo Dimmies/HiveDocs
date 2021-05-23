@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.EnumerateEntities(initFunc, moveFunc, disposeFunc)
+HVCore.Functions.EnumerateEntities(initFunc, moveFunc, disposeFunc)
 ```
 
 

@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPlayerByPhone(number)
+HVCore.Functions.GetPlayerByPhone(number)
 ```
 
 | Argument | Description | Required |

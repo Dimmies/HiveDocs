@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetSource(identifier)
+HVCore.Functions.GetSource(identifier)
 ```
 
 | Argument | Description | Required |

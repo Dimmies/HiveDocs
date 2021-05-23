@@ -7,9 +7,9 @@ pages:
 
   - Client Functions:
     - PlayerData: clFunctions/PlayerData.md
+    - Notify: clFunctions/Notify.md
     - SpawnVehicle: clFunctions/SpawnVehicle.md
     - DeleteVehicle: clFunctions/DeleteVehicle.md
-    - Notify: clFunctions/Notify.md
     - TriggerCallback: clFunctions/TriggerCallback.md
     - EnumerateEntities: clFunctions/EnumerateEntities.md
     - GetVehicles: clFunctions/GetVehicles.md
@@ -33,6 +33,7 @@ pages:
 
   - Server Functions:
     - PlayerData: svFunctions/PlayerData.md
+    - Notify: svFunctions/Notify.md
     - GetIdentifier: svFunctions/GetIdentifier.md
     - GetSource: svFunctions/GetSource.md
     - GetPlayerByCitizenId: svFunctions/GetPlayerByCitizenId.md

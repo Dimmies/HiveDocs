@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.RemovePermission(source)
+HVCore.Functions.RemovePermission(source)
 ```
 
 | Argument | Description | Required |

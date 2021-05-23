@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPlayerByCitizenId(citizenid)
+HVCore.Functions.GetPlayerByCitizenId(citizenid)
 ```
 
 | Argument | Description | Required |

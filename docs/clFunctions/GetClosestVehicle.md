@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetClosestVehicle(coords)
+HVCore.Functions.GetClosestVehicle(coords)
 ```
 
 

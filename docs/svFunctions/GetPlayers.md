@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPlayers()
+HVCore.Functions.GetPlayers()
 ```
 
 Get all active players

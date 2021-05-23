@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPlayersFromCoords(coords, distance)
+HVCore.Functions.GetPlayersFromCoords(coords, distance)
 ```
 
 

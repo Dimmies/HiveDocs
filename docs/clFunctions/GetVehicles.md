@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetVehicles()
+HVCore.Functions.GetVehicles()
 ```
 
 Returns a table of all vehicles

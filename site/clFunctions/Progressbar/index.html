@@ -219,6 +219,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Notify/" class="md-nav__link">
+        Notify
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../SpawnVehicle/" class="md-nav__link">
         SpawnVehicle
       </a>
@@ -233,18 +245,6 @@
     <li class="md-nav__item">
       <a href="../DeleteVehicle/" class="md-nav__link">
         DeleteVehicle
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Notify/" class="md-nav__link">
-        Notify
       </a>
     </li>
   
@@ -384,9 +384,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Progressbar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Progressbar
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disable-movement-types" class="md-nav__link">
+    Disable Movement Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -543,6 +573,18 @@
     <li class="md-nav__item">
       <a href="../../svFunctions/PlayerData/" class="md-nav__link">
         PlayerData
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../svFunctions/Notify/" class="md-nav__link">
+        Notify
       </a>
     </li>
   
@@ -843,6 +885,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disable-movement-types" class="md-nav__link">
+    Disable Movement Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -854,35 +911,102 @@
               
                 
                 
-                <pre><code class="language-lua">QBCore.Functions.Progressbar(name, label, duration, useWhileDead, canCancel, disableControls, animation, prop, propTwo, onFinish, onCancel)
+                <pre><code class="language-lua">HVCore.Functions.Progressbar(name, label, duration, useWhileDead, canCancel, disableControls, animation, prop, propTwo, onFinish, onCancel)
 </code></pre>
-<p>| Argument | Description | Type | Required |
-| ----------- | ----------- | ----------- |
-| @name | Name (think this is used to keep track of what progressbar it is) | String | true |
-| @label | The text shown on the progressbar | String | true |
-| @duration | The time is takes to complete the progress bar | Int | true |
-| @useWhileDead | Whether or not the progbar can start while the player is dead | Bool | true |
-| @canCancel | Whether or not the player can cancel the progbar | Bool | true |
-| @disableControls | The controls that should be disabled when the progbar is active | table | true |
-| @animation | The animation that plays while the progbar is active | table | true |
-| @prop | A prop that displays while the progbar is active | table | true |
-| @propTwo | A 2nd prop that displays while the progbar is active | table | true |
-| @onFinish | A function that is called when the progbar is completed successfully | function | true |
-| @onCancel | A function that is called when the progbar is failed/canceled | function | false |</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@name</td>
+<td>Name (think this is used to keep track of what progressbar it is)</td>
+<td>String</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@label</td>
+<td>The text shown on the progressbar</td>
+<td>String</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@duration</td>
+<td>The time is takes to complete the progress bar</td>
+<td>Int</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@useWhileDead</td>
+<td>Whether or not the progbar can start while the player is dead</td>
+<td>Bool</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@canCancel</td>
+<td>Whether or not the player can cancel the progbar</td>
+<td>Bool</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@disableControls</td>
+<td>The controls that should be disabled when the progbar is active</td>
+<td>table</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@animation</td>
+<td>The animation that plays while the progbar is active</td>
+<td>table</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@prop</td>
+<td>A prop that displays while the progbar is active</td>
+<td>table</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@propTwo</td>
+<td>A 2nd prop that displays while the progbar is active</td>
+<td>table</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@onFinish</td>
+<td>A function that is called when the progbar is completed successfully</td>
+<td>function</td>
+<td>true</td>
+</tr>
+<tr>
+<td>@onCancel</td>
+<td>A function that is called when the progbar is failed/canceled</td>
+<td>function</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
 <p>Starts a progress bar</p>
 <h1 id="example">Example</h1>
 <p>-</p>
-<pre><code class="language-lua">    QBCore.Functions.Progressbar(&quot;prog_bar&quot;, &quot;Doing Progress..&quot;, 5000, false, true, {}, {}, {}, {}, function() -- // Done
+<pre><code class="language-lua">    HVCore.Functions.Progressbar(&quot;prog_bar&quot;, &quot;Doing Progress..&quot;, 5000, false, true, {}, {}, {}, {}, function() -- // Done
         print(&quot;Progress Bar Finished!&quot;)
     end, function() -- // Cancel
         print(&quot;Progress Bar Canceled&quot;)
     end)
 </code></pre>
-<p>Disable Movements:
-- disableMouse
-- disableMovement
-- disableCarMovement
-- disableCombat</p>
+<h2 id="disable-movement-types">Disable Movement Types</h2>
+<ul>
+<li>disableMouse</li>
+<li>disableMovement</li>
+<li>disableCarMovement</li>
+<li>disableCombat</li>
+</ul>
                 
               
               

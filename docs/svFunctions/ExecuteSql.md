@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.ExecuteSql(wait, query, cb)
+HVCore.Functions.ExecuteSql(wait, query, cb)
 ```
 
 | Argument | Description | Required |
@@ -12,7 +12,7 @@ Executes and SQL query
 
 Example:
 ```lua
-QBCore.Functions.ExecuteSql(true, "SELECT * FROM table WHERE column = '" .. columnSpecific .. "'", function(result)
+HVCore.Functions.ExecuteSql(true, "SELECT * FROM table WHERE column = '" .. columnSpecific .. "'", function(result)
 		print(result)
     end)
 ```

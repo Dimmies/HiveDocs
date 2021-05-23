@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.CreateCallback(name, cb)
+HVCore.Functions.CreateCallback(name, cb)
 ```
 
 | Argument | Description | Required |

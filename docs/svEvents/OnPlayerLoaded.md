@@ -1,5 +1,5 @@
 ```lua
-AddEventHandler("QBCore:Server:OnPlayerLoaded")
+AddEventHandler("HVCore:Server:OnPlayerLoaded")
 ```
 
 Triggers when the player is loaded

@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.Notify(text, textype, length)
+HVCore.Functions.Notify(text, textype, length)
 ```
 
 

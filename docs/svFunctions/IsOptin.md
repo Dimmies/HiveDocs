@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.IsOptin(source)
+HVCore.Functions.IsOptin(source)
 ```
 
 | Argument | Description | Required |

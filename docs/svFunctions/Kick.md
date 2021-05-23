@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.Kick(source, reason, setKickReason, deferrals)
+HVCore.Functions.Kick(source, reason, setKickReason, deferrals)
 ```
 
 | Argument | Description | Required |

@@ -1,7 +1,7 @@
 # Player Data
 
 ```lua
-TriggerEvent("QBCore:Command:TeleportToCoords", x, y, z)
+TriggerEvent("HVCore:Command:TeleportToCoords", x, y, z)
 ```
 
 | Argument | Description | Required |

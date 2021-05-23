@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.SetVehicleProperties(vehicle, props)
+HVCore.Functions.SetVehicleProperties(vehicle, props)
 ```
 
 

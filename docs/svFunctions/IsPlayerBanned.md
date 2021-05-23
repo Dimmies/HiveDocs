@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.IsPlayerBanned(source)
+HVCore.Functions.IsPlayerBanned(source)
 ```
 
 | Argument | Description | Required |

@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.ToggleOptin(source)
+HVCore.Functions.ToggleOptin(source)
 ```
 
 | Argument | Description | Required |

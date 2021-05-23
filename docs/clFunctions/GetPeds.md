@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPeds(ignoreList)
+HVCore.Functions.GetPeds(ignoreList)
 ```
 
 

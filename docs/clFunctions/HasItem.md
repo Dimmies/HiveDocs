@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.HasItem(source, cb, item)
+HVCore.Functions.HasItem(source, cb, item)
 ```
 
 

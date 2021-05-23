@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetPermission(source)
+HVCore.Functions.GetPermission(source)
 ```
 
 | Argument | Description | Required |

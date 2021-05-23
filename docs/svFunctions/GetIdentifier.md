@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetIdentifier(source, idtype)
+HVCore.Functions.GetIdentifier(source, idtype)
 ```
 
 | Argument | Description | Required |

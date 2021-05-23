@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetClosestPlayer(coords)
+HVCore.Functions.GetClosestPlayer(coords)
 ```
 
 

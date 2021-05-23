@@ -1,7 +1,7 @@
 # Player Data
 
 ```lua
-QBCore.Functions.SpawnVehicle(model, cb, coords, isnetworked)
+HVCore.Functions.SpawnVehicle(model, cb, coords, isnetworked)
 ```
 
 | Argument | Description | Required |

@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.GetVehicleProperties(vehicle)
+HVCore.Functions.GetVehicleProperties(vehicle)
 ```
 
 

@@ -2,10 +2,10 @@
 
 Client:
 ```lua
-QBCore = nil
+HVCore = nil
 Citizen.CreateThread(function() 
-	while QBCore == nil do
-		TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+	while HVCore == nil do
+		TriggerEvent('HVCore:GetObject', function(obj) HVCore = obj end)
 		Citizen.Wait(0)
 	end
 end)
@@ -13,6 +13,6 @@ end)
 
 Server:
 ```lua
-QBCore = nil
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+HVCore = nil
+TriggerEvent('HVCore:GetObject', function(obj) HVCore = obj end)
 ```

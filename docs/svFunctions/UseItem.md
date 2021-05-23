@@ -1,5 +1,5 @@
 ```lua
-QBCore.Functions.UseItem(source, item)
+HVCore.Functions.UseItem(source, item)
 ```
 
 | Argument | Description | Required |

@@ -1,7 +1,7 @@
 # Player Data
 
 ```lua
-AddEventHandler("QBCore:Client:OnPlayerLoaded")
+AddEventHandler("HVCore:Client:OnPlayerLoaded")
 ```
 
 Triggers when the player is loaded
