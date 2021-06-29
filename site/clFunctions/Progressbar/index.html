@@ -655,6 +655,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../svFunctions/ExecuteSql/" class="md-nav__link">
+        ExecuteSql
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../svFunctions/CreateCallback/" class="md-nav__link">
         CreateCallback
       </a>
@@ -866,6 +878,48 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Misc
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Misc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/ChatMessages/" class="md-nav__link">
+        ChatMessages
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -911,8 +965,8 @@
               
                 
                 
-                <pre><code class="language-lua">HVCore.Functions.Progressbar(name, label, duration, useWhileDead, canCancel, disableControls, animation, prop, propTwo, onFinish, onCancel)
-</code></pre>
+                <div class="highlight"><pre><span></span><code><span class="n">HVCore</span><span class="p">.</span><span class="n">Functions</span><span class="p">.</span><span class="n">Progressbar</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">useWhileDead</span><span class="p">,</span> <span class="n">canCancel</span><span class="p">,</span> <span class="n">disableControls</span><span class="p">,</span> <span class="n">animation</span><span class="p">,</span> <span class="n">prop</span><span class="p">,</span> <span class="n">propTwo</span><span class="p">,</span> <span class="n">onFinish</span><span class="p">,</span> <span class="n">onCancel</span><span class="p">)</span>
+</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -993,13 +1047,13 @@
 </table>
 <p>Starts a progress bar</p>
 <h1 id="example">Example</h1>
-<p>-</p>
-<pre><code class="language-lua">    HVCore.Functions.Progressbar(&quot;prog_bar&quot;, &quot;Doing Progress..&quot;, 5000, false, true, {}, {}, {}, {}, function() -- // Done
-        print(&quot;Progress Bar Finished!&quot;)
-    end, function() -- // Cancel
-        print(&quot;Progress Bar Canceled&quot;)
-    end)
-</code></pre>
+<p>-
+<div class="highlight"><pre><span></span><code>    <span class="n">HVCore</span><span class="p">.</span><span class="n">Functions</span><span class="p">.</span><span class="n">Progressbar</span><span class="p">(</span><span class="s2">&quot;prog_bar&quot;</span><span class="p">,</span> <span class="s2">&quot;Doing Progress..&quot;</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="p">{},</span> <span class="p">{},</span> <span class="p">{},</span> <span class="kr">function</span><span class="p">()</span> <span class="c1">-- // Done</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progress Bar Finished!&quot;</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span> <span class="c1">-- // Cancel</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progress Bar Canceled&quot;</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+</code></pre></div></p>
 <h2 id="disable-movement-types">Disable Movement Types</h2>
 <ul>
 <li>disableMouse</li>

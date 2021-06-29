@@ -8,4 +8,4 @@ HVCore.Functions.SetVehicleProperties(vehicle, props)
 | @vehicle | Vehicle ID | true |
 | @props | Vehicles Props | true |
 
-Sets a vehicle properties
+Sets a vehicles properties

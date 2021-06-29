@@ -6,4 +6,5 @@ HVCore.Functions.IsOptin(source)
 | ----------- | ----------- | ----------- |
 | @source | Player Source | true |
 
-Unsure of what this does
+!!! note
+    This just seems to check if the player is an admin. It doesn't do much and probably shouldn't be used much.

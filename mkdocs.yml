@@ -2,6 +2,12 @@ site_name: Hive Documentation
 
 theme: material
 
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
 pages:
   - Home: index.md
 
@@ -39,6 +45,7 @@ pages:
     - GetPlayerByCitizenId: svFunctions/GetPlayerByCitizenId.md
     - GetPlayerByPhone: svFunctions/GetPlayerByPhone.md
     - GetPlayers: svFunctions/GetPlayers.md
+    - ExecuteSql: svFunctions/ExecuteSql.md
     - CreateCallback: svFunctions/CreateCallback.md
     - TriggerCallback: svFunctions/TriggerCallback.md
     - CreateUseableItem: svFunctions/CreateUseableItem.md
@@ -56,3 +63,6 @@ pages:
 
   - Server Events:
     - OnPlayerLoaded: svEvents/OnPlayerLoaded.md
+
+  - Misc:
+    - ChatMessages: misc/ChatMessages.md

@@ -7,3 +7,6 @@ HVCore.Functions.IsPlayerBanned(source)
 | @source | Player Source | true |
 
 Checks if the player is banned
+
+!!! note "Deprecation Warning"
+    This is obsolete as player bans are ran through txAdmin.

@@ -1,5 +1,5 @@
 ```lua
-TriggerClientEvent('QBCore:Notify', source, text, notifType)
+TriggerClientEvent('HVCore:Notify', source, text, notifType)
 ```
 
 | Argument | Description | Required |
@@ -8,4 +8,4 @@ TriggerClientEvent('QBCore:Notify', source, text, notifType)
 | @text | Text displayed on the notification | true |
 | @notifType | Type of the notification [primary, error or success] | false (Defaults to Primary)
 
-Kicks the player from the server
+Sends a notification to the specified player

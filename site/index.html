@@ -623,6 +623,18 @@
   
   
     <li class="md-nav__item">
+      <a href="svFunctions/ExecuteSql/" class="md-nav__link">
+        ExecuteSql
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="svFunctions/CreateCallback/" class="md-nav__link">
         CreateCallback
       </a>
@@ -834,6 +846,48 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Misc
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Misc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="misc/ChatMessages/" class="md-nav__link">
+        ChatMessages
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -865,19 +919,19 @@
                 
                 
                 <h1 id="welcome-to-hive-documentation">Welcome to Hive Documentation</h1>
-<p>Client:</p>
-<pre><code class="language-lua">HVCore = nil
-Citizen.CreateThread(function() 
-    while HVCore == nil do
-        TriggerEvent('HVCore:GetObject', function(obj) HVCore = obj end)
-        Citizen.Wait(0)
-    end
-end)
-</code></pre>
-<p>Server:</p>
-<pre><code class="language-lua">HVCore = nil
-TriggerEvent('HVCore:GetObject', function(obj) HVCore = obj end)
-</code></pre>
+<p>Client:
+<div class="highlight"><pre><span></span><code><span class="n">HVCore</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">Citizen</span><span class="p">.</span><span class="n">CreateThread</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> 
+    <span class="kr">while</span> <span class="n">HVCore</span> <span class="o">==</span> <span class="kc">nil</span> <span class="kr">do</span>
+        <span class="n">TriggerEvent</span><span class="p">(</span><span class="s1">&#39;HVCore:GetObject&#39;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="n">HVCore</span> <span class="o">=</span> <span class="n">obj</span> <span class="kr">end</span><span class="p">)</span>
+        <span class="n">Citizen</span><span class="p">.</span><span class="n">Wait</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Server:
+<div class="highlight"><pre><span></span><code><span class="n">HVCore</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">TriggerEvent</span><span class="p">(</span><span class="s1">&#39;HVCore:GetObject&#39;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="n">HVCore</span> <span class="o">=</span> <span class="n">obj</span> <span class="kr">end</span><span class="p">)</span>
+</code></pre></div></p>
                 
               
               

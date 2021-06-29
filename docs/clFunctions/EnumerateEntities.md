@@ -9,4 +9,7 @@ HVCore.Functions.EnumerateEntities(initFunc, moveFunc, disposeFunc)
 | @moveFunc | -- | true |
 | @disposeFunc | -- | true |
 
-Enumerates through entities - This will probably hardly ever be used
+Enumerates through specified entities
+
+!!! note
+    This is rarely ever used outside of the framework itself.

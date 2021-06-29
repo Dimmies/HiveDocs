@@ -14,5 +14,5 @@ Example:
 ```lua
 HVCore.Functions.ExecuteSql(true, "SELECT * FROM table WHERE column = '" .. columnSpecific .. "'", function(result)
 		print(result)
-    end)
+end)
 ```

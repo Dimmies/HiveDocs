@@ -9,7 +9,7 @@ Player Data consists of:
 | Data | Description |
 | ----------- | ----------- |
 | Player.PlayerData.money | Returns a table of the players money (cash, bank & crypto) |
-| Player.PlayerData.job | Returns a table of the player job (name, label, payment, onduty) |
+| Player.PlayerData.job | Returns a table of the player job (name, label, onduty, currentRank, rankPayment, rankLabel) |
 | Player.PlayerData.position | Returns the players saved position |
 | Player.PlayerData.metadata | Returns a table of the players Metadata (hunger, thirst, licenses, commandbindings, fingerprint etc.) |
 | Player.PlayerData.charinfo | Returns a table of the player Character Data (cid, nationality, First & Last name, Phone#, DOB, AccountID & Gender) |
