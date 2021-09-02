@@ -384,39 +384,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Progressbar
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Progressbar
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#disable-movement-types" class="md-nav__link">
-    Disable Movement Types
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -939,21 +909,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#disable-movement-types" class="md-nav__link">
-    Disable Movement Types
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -965,7 +920,7 @@
               
                 
                 
-                <div class="highlight"><pre><span></span><code><span class="n">HVCore</span><span class="p">.</span><span class="n">Functions</span><span class="p">.</span><span class="n">Progressbar</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">useWhileDead</span><span class="p">,</span> <span class="n">canCancel</span><span class="p">,</span> <span class="n">disableControls</span><span class="p">,</span> <span class="n">animation</span><span class="p">,</span> <span class="n">prop</span><span class="p">,</span> <span class="n">propTwo</span><span class="p">,</span> <span class="n">onFinish</span><span class="p">,</span> <span class="n">onCancel</span><span class="p">)</span>
+                <div class="highlight"><pre><span></span><code><span class="n">TriggerEvent</span><span class="p">(</span><span class="s2">&quot;HiveHud:StartProg&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">useWhileDead</span><span class="p">,</span> <span class="n">canCancel</span><span class="p">,</span> <span class="n">disabledControls</span><span class="p">,</span> <span class="n">animation</span><span class="p">,</span> <span class="n">cb</span>
 </code></pre></div>
 <table>
 <thead>
@@ -978,22 +933,16 @@
 </thead>
 <tbody>
 <tr>
-<td>@name</td>
-<td>Name (think this is used to keep track of what progressbar it is)</td>
-<td>String</td>
-<td>true</td>
-</tr>
-<tr>
-<td>@label</td>
-<td>The text shown on the progressbar</td>
-<td>String</td>
-<td>true</td>
-</tr>
-<tr>
 <td>@duration</td>
 <td>The time is takes to complete the progress bar</td>
 <td>Int</td>
 <td>true</td>
+</tr>
+<tr>
+<td>@color</td>
+<td>Color of the progress bar (Can be Hex or Name) Defaults to lime green</td>
+<td>string</td>
+<td>false</td>
 </tr>
 <tr>
 <td>@useWhileDead</td>
@@ -1008,7 +957,7 @@
 <td>true</td>
 </tr>
 <tr>
-<td>@disableControls</td>
+<td>@disabledControls</td>
 <td>The controls that should be disabled when the progbar is active</td>
 <td>table</td>
 <td>true</td>
@@ -1020,47 +969,33 @@
 <td>true</td>
 </tr>
 <tr>
-<td>@prop</td>
-<td>A prop that displays while the progbar is active</td>
-<td>table</td>
-<td>true</td>
-</tr>
-<tr>
-<td>@propTwo</td>
-<td>A 2nd prop that displays while the progbar is active</td>
-<td>table</td>
-<td>true</td>
-</tr>
-<tr>
-<td>@onFinish</td>
-<td>A function that is called when the progbar is completed successfully</td>
+<td>@cb</td>
+<td>The function that is called when the progress bar is complete or canceled</td>
 <td>function</td>
 <td>true</td>
-</tr>
-<tr>
-<td>@onCancel</td>
-<td>A function that is called when the progbar is failed/canceled</td>
-<td>function</td>
-<td>false</td>
 </tr>
 </tbody>
 </table>
 <p>Starts a progress bar</p>
 <h1 id="example">Example</h1>
-<p>-
-<div class="highlight"><pre><span></span><code>    <span class="n">HVCore</span><span class="p">.</span><span class="n">Functions</span><span class="p">.</span><span class="n">Progressbar</span><span class="p">(</span><span class="s2">&quot;prog_bar&quot;</span><span class="p">,</span> <span class="s2">&quot;Doing Progress..&quot;</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="p">{},</span> <span class="p">{},</span> <span class="p">{},</span> <span class="p">{},</span> <span class="kr">function</span><span class="p">()</span> <span class="c1">-- // Done</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progress Bar Finished!&quot;</span><span class="p">)</span>
-    <span class="kr">end</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span> <span class="c1">-- // Cancel</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Progress Bar Canceled&quot;</span><span class="p">)</span>
-    <span class="kr">end</span><span class="p">)</span>
-</code></pre></div></p>
-<h2 id="disable-movement-types">Disable Movement Types</h2>
+<div class="highlight"><pre><span></span><code><span class="n">TriggerEvent</span><span class="p">(</span><span class="s2">&quot;HiveHud:StartProg&quot;</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="p">{</span> 
+    <span class="n">mouse</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">move</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">car</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">combat</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">-- // true = disabled</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="n">dict</span> <span class="o">=</span> <span class="s2">&quot;timetable@ron@ig_4_smoking_meth&quot;</span><span class="p">,</span> <span class="n">anim</span> <span class="o">=</span> <span class="s2">&quot;chefiscookingup&quot;</span><span class="p">,</span> <span class="n">flag</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="p">},</span> <span class="kr">function</span><span class="p">(</span><span class="n">success</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="ow">not</span> <span class="n">success</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You smoked Meth!&quot;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Disable Movement Types</p>
 <ul>
-<li>disableMouse</li>
-<li>disableMovement</li>
-<li>disableCarMovement</li>
-<li>disableCombat</li>
+<li>[mouse] - Disable Camera Movement</li>
+<li>[move] - Disables Player Movement</li>
+<li>[car] - Disabled Car Movement</li>
+<li>[combat] - Disabled Combat Controls</li>
 </ul>
+</div>
                 
               
               
